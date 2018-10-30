@@ -1,7 +1,7 @@
 {
   "name": "ljtools",
-  "version": "1.0.2",
-  "description": "工具类包",
+  "version": "1.0.3",
+  "description": "js工具类包",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

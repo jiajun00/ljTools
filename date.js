@@ -10,7 +10,7 @@ function getNowDate(type='1') {
   if(month<=9){
     month = '0'+month;
   }
-  let day = this.myDate.getDate();        //获取当前日(1-31)
+  let day = myDate.getDate();        //获取当前日(1-31)
   if(day<=9){
     day = '0'+day;
   }
