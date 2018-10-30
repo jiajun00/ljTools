@@ -9,7 +9,7 @@ ljTools 是一套处理数据的常用函数工具包，简化数据处理。具
 
 ## 安装
 ```bash
-npm install i -save ljtools
+npm install -save ljtools
 ```
 
 ## Document
