@@ -74,7 +74,7 @@ import { numFormat } from 'ljTools';
 
 const money = numFormat(num);
 ```
-### 数组类型类型
+### 数组类型
 * **获取数组最大值**
 
 &emsp;&emsp; _方法：arr_max(arr)_
