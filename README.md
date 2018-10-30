@@ -1,5 +1,5 @@
 # ljTools
-![](https://img.shields.io/badge/ljTools-1.0.3-green.svg)
+![](https://img.shields.io/badge/ljTools-1.0.4-green.svg)
 ![](https://img.shields.io/travis/antvis/g2.svg)
 ![](https://img.shields.io/badge/language-javascript-red.svg)
 ![](https://img.shields.io/badge/license-MIT-000000.svg)

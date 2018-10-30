@@ -32,11 +32,11 @@ function getWeek(type='1') {
   const myDate = new Date();
   const w = myDate.getDay();         //获取当前星期X(0-6,0代表星期天)
   if(type === '1'){
-    return w+1;
-  }
-  if(type === '2'){
     const Week = ['日','一','二','三','四','五','六'];
     return Week[w];
+  }
+  if(type === '2'){
+    return w+1;
   }
 }
 
