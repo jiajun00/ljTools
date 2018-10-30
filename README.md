@@ -13,7 +13,7 @@ npm install i -save ljTools
 ```
 
 ## Document
-Wiki文档
+[Wiki文档](https://github.com/jiajun00/ljTools/wiki)
 
 ## 使用方法
 
@@ -56,7 +56,7 @@ const stamp = timeTostamp('2018-10-10 17:55:32');
 
 &emsp;&emsp; _参数：stamp（字符串） &emsp;日期，如：'1234567890'_
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;_type（字符串，可选） &emsp;默认'1'、YYYY/MM/DD h:m:s； '2'、YYYY-MM-DD h:m:s； '3'、YYYY/MM/DD； '4'、YYYY-MM-DD； '5'.h:m:s_
+&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;_type（字符串，可选） &emsp;默认'1'、YYYY/MM/DD h : m : s； '2'、YYYY-MM-DD h : m : s； '3'、YYYY/MM/DD； '4'、YYYY-MM-DD； '5'.h : m : s_
 ```javascript
 import { stampTotime } from 'ljTools';
 
