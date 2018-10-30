@@ -1,6 +1,6 @@
 {
   "name": "ljtools",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "工具类包",
   "main": "index.js",
   "scripts": {
