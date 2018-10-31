@@ -25,3 +25,4 @@ function arr_random(arr) {
 exports.arr_max = arr_max;
 exports.arr_min = arr_min;
 exports.arr_random = arr_random;
+exports.__esModule = true;

@@ -19,3 +19,4 @@ function numFormat(num, type='1'){
 
 
 exports.numFormat = numFormat;
+exports.__esModule = true;

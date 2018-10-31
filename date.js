@@ -101,3 +101,4 @@ exports.getNowDate = getNowDate;
 exports.getWeek = getWeek;
 exports.stampTotime = stampTotime;
 exports.timeTostamp = timeTostamp;
+exports.__esModule = true;

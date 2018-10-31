@@ -59,3 +59,4 @@ exports.str_space = str_space;
 exports.val_empty = val_empty;
 exports.str_cut = str_cut;
 exports.isInstr = isInstr;
+exports.__esModule = true;
