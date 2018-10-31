@@ -1,5 +1,5 @@
 # ljTools
-![](https://img.shields.io/badge/ljTools-1.0.5-green.svg)
+![](https://img.shields.io/badge/ljTools-1.0.6-green.svg)
 ![](https://img.shields.io/travis/antvis/g2.svg)
 ![](https://img.shields.io/badge/language-javascript-red.svg)
 ![](https://img.shields.io/badge/license-MIT-000000.svg)
@@ -9,7 +9,7 @@ ljTools 是一套处理数据的常用函数工具包，简化数据处理。具
 
 ## 安装
 ```bash
-npm install -save ljtools
+npm install --save ljtools
 ```
 
 ## Document
