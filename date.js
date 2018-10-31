@@ -15,10 +15,10 @@ function getNowDate(type='1') {
     day = '0'+day;
   }
   let date
-  if( type === '1') {
+  if( type === '1' || type === 1) {
     date = year + '/' + month + '/' + day;
   }
-  if( type === '2') {
+  if( type === '2' || type === 2) {
     date = year + '-' + month + '-' + day;
   }
   return date
@@ -31,11 +31,11 @@ function getNowDate(type='1') {
 function getWeek(type='1') {
   const myDate = new Date();
   const w = myDate.getDay();         //获取当前星期X(0-6,0代表星期天)
-  if(type === '1'){
+  if(type === '1' || type === 1){
     const Week = ['日','一','二','三','四','五','六'];
     return Week[w];
   }
-  if(type === '2'){
+  if(type === '2' || type === 2){
     return w+1;
   }
 }
@@ -73,19 +73,19 @@ function stampTotime(timestamp , type='1') {
     s = '0'+s;
   }
   let time;
-  if( type === '1') {
+  if( type === '1' || type === 1) {
     time = Y + '/' + M + '/' + D + " " + h + ':' + m + ':' + s;
   }
-  if( type === '2') {
+  if( type === '2' || type === 2) {
     time = Y + '-' + M + '-' + D + " " + h + ':' + m + ':' + s;
   }
-  if( type === '3') {
+  if( type === '3' || type === 3) {
     time = Y + '/' + M + '/' + D;
   }
-  if( type === '4') {
+  if( type === '4' || type === 4) {
     time = Y + '-' + M + '-' + D;
   }
-  if( type === '5') {
+  if( type === '5' || type === 5) {
     time = h + ':' + m + ':' + s;
   }
   return time;

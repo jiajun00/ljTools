@@ -1,11 +1,18 @@
 # ljTools
-![](https://img.shields.io/badge/ljTools-1.0.6-green.svg)
-![](https://img.shields.io/travis/antvis/g2.svg)
+![](https://img.shields.io/badge/ljTools-1.0.7-green.svg)
+![](https://img.shields.io/badge/build-passing-yellow.svg)
 ![](https://img.shields.io/badge/language-javascript-red.svg)
 ![](https://img.shields.io/badge/license-MIT-000000.svg)
 ![](https://img.shields.io/badge/ECMAScipt-6-orange.svg)
 
 ljTools 是一套处理数据的常用函数工具包，简化数据处理。具有高度的易用性和复用性，用户无需关注各种繁琐的实现细节，一条语句即可构建出需要的结果。
+包括：
+- 日期类型，获取年月日、获取星期、将日期转为时间戳、将时间戳转为日期；
+- Number类型，数字转化为带三位逗号的字符串、生成从最小值到最大值的随机数；
+- 数组类型，获取数组最大值、获取数组最小值、输入数组随机抽取数组中的一个值输出；
+- 字符串类型，判断值是否为null或者undefind、截取字符串、除去字符串中的空格、判断是否包函字符串、产生任意长度随机字母数字组合；
+- 文件类型，动态加载js文件
+
 
 ## 安装
 ```bash
@@ -75,6 +82,17 @@ const time = stampTotime('1234567890');
 import { numFormat } from 'ljTools';
 
 const money = numFormat(num);
+```
+* **生成从最小值到最大值的随机数**
+
+&emsp;&emsp; _方法：randomNum(minNum, maxNum)_
+
+&emsp;&emsp; _参数： minNum（数字）最小值_   
+&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;maxNum（数字） 最大值_
+```javascript
+import { randomNum } from 'ljTools';
+
+const money = randomNum(minNum,maxNum);
 ```
 ### 数组类型
 * **获取数组最大值**
@@ -151,12 +169,52 @@ const max = str_space(str);
 
 &emsp;&emsp; _参数： str（字符串）_
 
-&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;instr（字符串）所包含的字符串
+&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;_instr（字符串）所包含的字符串_
 
 ```javascript
 import { isInstr } from 'ljTools';
 
 const max = isInstr(str, instr);
+```
+* **产生任意长度随机字母数字组合**
+
+&emsp;&emsp; _方法：randomWords(min, max=0, isNumber=true)_
+
+&emsp;&emsp; _参数： min（数字）任意长度最小位[只填第一个参数生成固定位数]_
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;_max（数字，可选）任意长度最大位_
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;_isNumber（bool，可选）是否包含数字_
+
+```javascript
+import { randomWords } from 'ljTools';
+
+randomWords(20); //生成20位的随机字符串
+randomWords(3,25); //生成3-25位的随机字符串
+randomWords(25,25,false); //生成不包含数字的25位的随机字符串
+```
+### 文件类型
+* **动态加载js文件**
+
+&emsp;&emsp; _方法：loadScript(path, callback)_
+
+&emsp;&emsp; _参数： path（字符串）js文件路径_
+
+&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;_callback 回调方法(返回参数true和false)_
+
+&emsp;&emsp;&ensp;注：异步方法
+
+```javascript
+import { loadScript } from 'ljTools';
+
+const url = "https://xxx.xxx.com/xxx.js";
+loadScript(url, (res)=>{
+  if(res){
+    console.log("成功!");
+  }else{
+    console.log("失败!");
+  }
+});
 ```
 ## License
    [MIT](http://opensource.org/licenses/MIT)

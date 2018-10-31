@@ -1,13 +1,15 @@
-var date = require('./date.js')
-var number = require('./number.js')
-var string = require('./string.js')
-var array = require('./array.js')
+var date = require('./date.js');
+var number = require('./number.js');
+var string = require('./string.js');
+var array = require('./array.js');
+var scripts = require('./loadscript.js')
 
 module.exports = exports = {
   ...number,
   ...string,
   ...array,
-  ...date
+  ...date,
+  ...scripts
 }
 
 Object.defineProperty(exports, "__esModule", {
