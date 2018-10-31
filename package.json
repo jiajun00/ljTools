@@ -1,7 +1,7 @@
 {
   "name": "ljtools",
-  "version": "1.0.7",
-  "description": "js工具类包",
+  "version": "1.0.8",
+  "description": "ljTools 是一套处理数据的常用函数工具包，简化数据处理。具有高度的易用性和复用性，用户无需关注各种繁琐的实现细节，一条语句即可构建出需要的结果",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

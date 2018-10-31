@@ -1,5 +1,5 @@
 # ljTools
-![](https://img.shields.io/badge/ljTools-1.0.7-green.svg)
+![](https://img.shields.io/badge/ljTools-1.0.8-green.svg)
 ![](https://img.shields.io/badge/build-passing-yellow.svg)
 ![](https://img.shields.io/badge/language-javascript-red.svg)
 ![](https://img.shields.io/badge/license-MIT-000000.svg)
@@ -20,8 +20,8 @@ npm install --save ljtools
 ```
 
 ## Document
-[Wiki文档](https://github.com/jiajun00/ljTools/wiki)
-
+[Wiki文档](https://github.com/jiajun00/ljTools/wiki/使用说明)
+[GIT](https://github.com/jiajun00/ljTools)
 [npm package](https://www.npmjs.com/package/ljtools)
 
 ## 使用方法
