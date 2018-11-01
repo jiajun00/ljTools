@@ -21,8 +21,12 @@ npm install --save ljtools
 
 ## Document
 [Wiki文档](https://github.com/jiajun00/ljTools/wiki/使用说明)
+
 [GIT](https://github.com/jiajun00/ljTools)
+
 [npm package](https://www.npmjs.com/package/ljtools)
+
+[cnpm package](https://npm.taobao.org/package/ljtools)
 
 ## 使用方法
 
