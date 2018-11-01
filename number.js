@@ -35,8 +35,56 @@ function randomNum(minNum,maxNum){
   }
 }
 
+/*
+ * 手机号验证
+ * @param number phone 手机号
+ */
+function checkPhone(phone){
+  if(/^1[34578]\d{9}$/.test(phone)){
+    return true;
+  } else {
+    return false;
+  }
+}
 
+/*
+ * 固定电话
+ * @param number tel 电话号吗
+ */
+function checkTel(tel){
+  if(/^(\(\d{3,4}\)|\d{3,4}-|\s)?\d{7,14}$/.test(tel)){
+    return true;
+  } else {
+    return false;
+  }
+}
+
+/*
+ * 身份证验证
+ * @param number idCard 省份证号码
+ */
+function checkIDCard(idCard){
+  const length = idCard.length;
+  if(length === 15){
+    if(/^[1-9]\d{7}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{3}$/.test(idCard)){
+      return true;
+    } else {
+      return false;
+    }
+  }
+  if(length === 18){
+    if(/^[1-9]\d{5}[1-9]\d{3}((0\d)|(1[0-2]))(([0|1|2]\d)|3[0-1])\d{4}$/.test(idCard)){
+      return true;
+    } else {
+      return false;
+    }
+  }
+  return false;
+}
 
 exports.numFormat = numFormat;
 exports.randomNum = randomNum;
+exports.checkPhone = checkPhone;
+exports.checkTel = checkTel;
+exports.checkIDCard = checkIDCard;
 exports.__esModule = true;

@@ -1,5 +1,5 @@
 # ljTools
-![](https://img.shields.io/badge/ljTools-1.0.8-green.svg)
+![](https://img.shields.io/badge/ljTools-1.0.9-green.svg)
 ![](https://img.shields.io/badge/build-passing-yellow.svg)
 ![](https://img.shields.io/badge/language-javascript-red.svg)
 ![](https://img.shields.io/badge/license-MIT-000000.svg)
@@ -8,9 +8,9 @@
 ljTools 是一套处理数据的常用函数工具包，简化数据处理。具有高度的易用性和复用性，用户无需关注各种繁琐的实现细节，一条语句即可构建出需要的结果。
 包括：
 - 日期类型，获取年月日、获取星期、将日期转为时间戳、将时间戳转为日期；
-- Number类型，数字转化为带三位逗号的字符串、生成从最小值到最大值的随机数；
+- Number类型，数字转化为带三位逗号的字符串、生成从最小值到最大值的随机数、手机号验证、座机号验证；
 - 数组类型，获取数组最大值、获取数组最小值、输入数组随机抽取数组中的一个值输出；
-- 字符串类型，判断值是否为null或者undefind、截取字符串、除去字符串中的空格、判断是否包函字符串、产生任意长度随机字母数字组合；
+- 字符串类型，判断值是否为null或者undefind、截取字符串、除去字符串中的空格、判断是否包函字符串、产生任意长度随机字母数字组合、邮箱验证；
 - 文件类型，动态加载js文件
 
 
@@ -97,6 +97,48 @@ const money = numFormat(num);
 import { randomNum } from 'ljTools';
 
 const money = randomNum(minNum,maxNum);
+```
+* **手机号验证**
+
+&emsp;&emsp; _方法：checkPhone(phone)_
+
+&emsp;&emsp; _参数： phone（数字）手机号_
+
+&emsp;&emsp; _返回值：bool型（true|false）_
+
+```javascript
+import { checkPhone } from 'ljTools';
+
+if(checkPhone(phone)){
+  console.log("验证成功！");
+}else{
+  console.log("验证失败！");
+}
+```
+* **固定电话**
+
+&emsp;&emsp; _方法：checkTel(tel)_
+
+&emsp;&emsp; _参数： tel（数字）电话号码_
+
+&emsp;&emsp; _返回值：bool型（true|false）_
+
+```javascript
+import { checkTel } from 'ljTools';
+
+const bool = checkTel(tel);
+```
+* **身份证验证**
+
+&emsp;&emsp; _方法：checkIDCard(idCard)_
+
+&emsp;&emsp; _参数： idCard（数字）身份证号_
+
+&emsp;&emsp; _返回值：bool型（true|false）_
+```javascript
+import { checkIDCard } from 'ljTools';
+
+const bool = checkIDCard(idCard);
 ```
 ### 数组类型
 * **获取数组最大值**
@@ -197,6 +239,21 @@ randomWords(20); //生成20位的随机字符串
 randomWords(3,25); //生成3-25位的随机字符串
 randomWords(25,25,false); //生成不包含数字的25位的随机字符串
 ```
+* **验证邮箱**
+
+&emsp;&emsp; _方法：checkEmail(email)_
+
+&emsp;&emsp; _参数： email（字符串）邮箱账号_
+
+&emsp;&emsp;&ensp;_返回值：bool型（true|false）_
+```javascript
+import { checkEmail } from 'ljTools';
+
+const email = '123@qq.com'
+const bool = checkEmail(email); //true
+
+```
+
 ### 文件类型
 * **动态加载js文件**
 

@@ -82,9 +82,21 @@ function randomWords(min, max=0, isNumber=true){
   return str;
 }
 
+/*
+ * 验证邮箱
+ */
+function checkEmail(email){
+  if( /^([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+@([a-zA-Z0-9]+[_|\_|\.]?)*[a-zA-Z0-9]+\.[a-zA-Z]{2,3}$/.test(email)){
+    return true;
+  } else {
+    return false;
+  }
+}
+
 exports.str_space = str_space;
 exports.val_empty = val_empty;
 exports.str_cut = str_cut;
 exports.isInstr = isInstr;
 exports.randomWords = randomWords;
+exports.checkEmail = checkEmail;
 exports.__esModule = true;
